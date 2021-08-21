@@ -7,6 +7,7 @@
     <groupId>org.example</groupId>
     <artifactId>First</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <!--This is a comment area, write your comment-->
 
     <properties>
         <maven.compiler.source>16</maven.compiler.source>
