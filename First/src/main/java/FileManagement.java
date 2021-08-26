@@ -1,39 +1,41 @@
 import java.io.*;
-// Hello----------
-//TEST
+import static org.mockito.Mockito.spy;
 public class FileManagement {
 
-    //method
-    public void fileRead()
-    {
-        try{
-            FileInputStream fstream = new FileInputStream("../../File/scratch.txt");
-            BufferedReader br = new BufferedReader(new InputStreamReader(fstream));
+    public String fileRead( ) throws FileNotFoundException {
+        String strLine;
+        String strLine2 = "";
 
-            String strLine;
 
-            //Read File Line By Line
+      try{
+            System.out.println ("before BUFFERED READER");
+           // BufferedReader br = new BufferedReader (new FileReader(("/Users/evaanantaxaxa/IdeaProjects/First/src/File/scratch.txt")));;
+            String str= "/Users/evaanantaxaxa/IdeaProjects/First/src/File/scratch.txt";
+            System.out.println ("FileReader"+str);
+            FileReader f = new FileReader((str));
+            System.out.println ("FileReader-------"+f.getClass());
+            BufferedReader br = new BufferedReader (f);
+            System.out.println ("AFTER FILE READER,     br="+br.readLine());
                while ((strLine = br.readLine()) != null)   {
-                // Print the content on the console - do what you want to do
-                System.out.println (strLine);
+                   strLine2=strLine;
+                System.out.println ("INISDE FILEMANAGMENT="+strLine);
             }
+            FileManagement tc = spy(new FileManagement());
 
-            //Close the input stream
-            fstream.close();
-        }
+            return "OK";
+          }
          catch (Exception e) {
+
             e.printStackTrace();
+             //
+             return "NOT OK";
         }
 
 
-
-       // return "File returned";
     }
-
-    //main
-    public static void main(String a[])
-    {
+    public static void main(String[] a) throws IOException {
         FileManagement f = new FileManagement();
-        f.fileRead();
+       //BufferedReader br= new BufferedReader();
+        System.out.println ("-----" +f.fileRead());
     }
 }
