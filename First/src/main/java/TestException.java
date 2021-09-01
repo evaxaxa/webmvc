@@ -6,12 +6,12 @@ public class TestException {
 
     private static void readBookJson() {
         try {
-            BufferedReader reader= new BufferedReader(new FileReader("../../Fle/scratch.txt"));
+            BufferedReader reader= new BufferedReader(new FileReader("../../File/scratch.txt"));
 
         } catch (FileNotFoundException exception) {
             // Output expected FileNotFoundExceptions.
-            System.out.println("file not foound!"+exception);
-        } catch (Exception exception) {
+                System.out.println("file not foound!"+exception);
+        } catch (Exception exception){
             // Output unexpected Exceptions.
             System.out.println("ops!!!"+exception);
         }
