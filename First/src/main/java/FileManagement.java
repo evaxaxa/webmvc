@@ -1,3 +1,4 @@
+/*
 import java.io.*;
 import static org.mockito.Mockito.spy;
 public class FileManagement {
@@ -5,8 +6,8 @@ public class FileManagement {
     public String fileRead( ) throws FileNotFoundException {
         String strLine;
         String strLine2 = "";
-
-
+        new Message();
+      //  ErrorResponse
       try{
             System.out.println ("before BUFFERED READER");
            // BufferedReader br = new BufferedReader (new FileReader(("/Users/evaanantaxaxa/IdeaProjects/First/src/File/scratch.txt")));;
@@ -39,3 +40,4 @@ public class FileManagement {
         System.out.println ("-----" +f.fileRead());
     }
 }
+*/
