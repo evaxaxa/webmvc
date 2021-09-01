@@ -1,1 +1,4 @@
-I am working with buddy.
+hello 0
+how 134
+are 6774
+you 8989

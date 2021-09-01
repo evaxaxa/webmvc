@@ -1,3 +1,4 @@
+/*
 import mockit.Mocked;
 import org.junit.Assert;
 import org.junit.Test;
@@ -27,7 +28,8 @@ public class FileManagementTest {
 
     try {
         //System.out.println("-----");
-        /*new MockUp<FileReader>(){
+        */
+/*new MockUp<FileReader>(){
             @Mock
             public void FileReader (String f) throws FileNotFoundException{
                 System.out.println("inside FileReader");
@@ -38,26 +40,34 @@ public class FileManagementTest {
                     }
                 };
             }
-        };*/
+        };*//*
 
-        /*BufferedReader bufferedReader = Mockito.mock(BufferedReader.class);
+
+        */
+/*BufferedReader bufferedReader = Mockito.mock(BufferedReader.class);
 Mockito.when(bufferedReader.readLine()).thenReturn("line1", "line2", "line3");
-objUnderTest.readStuff(bufferedReader);*/
-        /*FileReader b = Mockito.mock(FileReader.class);
+objUnderTest.readStuff(bufferedReader);*//*
+
+        */
+/*FileReader b = Mockito.mock(FileReader.class);
 
         InputStreamReader i = Mockito.mock(InputStreamReader.class);
         Mockito.when(InputStreamReader.class).thenReturn(i);
-*/
+*//*
 
-       /* new MockUp<FileReader>() {
+
+       */
+/* new MockUp<FileReader>() {
             @Mock
             public String readLine() throws IOException{
 
                     return p;
 
             }
-        };*/
-        /*MockUp<BufferedReader> bufferedReader1 =new MockUp<BufferedReader>() {
+        };*//*
+
+        */
+/*MockUp<BufferedReader> bufferedReader1 =new MockUp<BufferedReader>() {
             @Mock
             public String readLine() throws IOException{
                 System.out.println ("INSIDE MOCK TRY");
@@ -70,10 +80,13 @@ objUnderTest.readStuff(bufferedReader);*/
                 }
                 else return null;
             }
-        };*/
+        };*//*
+
         // assertEquals("",new ArrayList<String>(), FileUtil.readFile("abc"));
-        /* BufferedReader bufferedReader = Mockito.mock(BufferedReader.class);
-        Mockito.when(bufferedReader.readLine()).thenReturn("OK");*/
+        */
+/* BufferedReader bufferedReader = Mockito.mock(BufferedReader.class);
+        Mockito.when(bufferedReader.readLine()).thenReturn("OK");*//*
+
         //FileManagementTest t = new FileManagementTest();
        //FileManagement tc = spy(new FileManagement());
 
@@ -117,9 +130,11 @@ objUnderTest.readStuff(bufferedReader);*/
 
               // Mockito.when(bufferedReader.readLine()).thenReturn("----EVA----");
                 //System.out.println("bufferedReader.readLine()="+bufferedReader.readLine());
-      /*  BufferedReader bufferedReader = Mockito.mock(BufferedReader.class);
+      */
+/*  BufferedReader bufferedReader = Mockito.mock(BufferedReader.class);
         FileReader fileReader = Mockito.mock(FileReader.class);
-        when(bufferedReader.readLine()).thenReturn("final");*/
+        when(bufferedReader.readLine()).thenReturn("final");*//*
+
 
 
         //when(FileReader.class).then();
@@ -151,3 +166,4 @@ objUnderTest.readStuff(bufferedReader);*/
 
 
 }
+*/
